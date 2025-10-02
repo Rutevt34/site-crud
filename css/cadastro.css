@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #7495d2;
+    margin: 0;
+    padding: 0;
+}
+
+form#formCadastro {
+    background:#ffffffcc;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(255,106,0,0.12);
+}
+
+form#formCadastro label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #185a9d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+form#formCadastro input[type="text"],
+form#formCadastro input[type="number"],
+form#formCadastro input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #43cea2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
+    transition: border-color 0.2s;
+}
+
+form#formCadastro input:focus {
+    border-color: #2f81d2;
+    outline: none;
+}
+
+form#formCadastro button {
+    width: 100%;
+    padding: 12px;
+    background: #5687af;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-family: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,106,0,0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+form#formCadastro button:hover {
+    background: #207580;
+    box-shadow: 0 4px 16px rgba(255,106,0,0.18);
+}

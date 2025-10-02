@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro Do Produto</title>
+</head>
+<body>
+    <form id="formCadastro">
+     <label for="nome">Nome Do Produto:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite o nome do produto" required><br>
+
+    <label for="preco">Preço:</label><br>
+    <input type="number" id="preco" name="preco" step="0.01" required><br>
+
+    <label for="quantidade">Quantidade:</label><br>
+    <input type="number" id="quantidade" name="quantidade" required><br>
+
+    <label for="categoria">Categoria:</label><br>
+    <input type="text" id="categoria" name="categoria" required><br>
+
+    <label for="oridoproduto">Origem Do Produto:</label> <br>
+    <input type="text" id="oridoproduto" name="oridoproduto" required><br>
+
+    <label for="lotedoproduto">Lote Do Produto:</label> <br>
+    <input type="number" id="lotedoproduto" name="lotedoproduto" required><br>
+
+    <label for="validadedoproduto">Validade Do Produto:</label> <br>
+    <input type="date" id="validadedoproduto" name="validadedoproduto" required><br>
+
+    <button type="submit" id="Cadastrar">Cadastrar</button><br>
+</form>
+<script src="../js/cadastro.js"></script>
+</body>
+</html>

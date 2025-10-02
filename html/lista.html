@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lista.css">
+    <title>Lista Do Produto</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Produtos</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    input {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lista de Produtos</h1>
+
+  <!-- Formulário -->
+  <form id="formProduto">
+    <input type="hidden" id="indiceEdicao">
+    <input type="text" id="nome" placeholder="Nome do Produto" required>
+    <input type="number" id="preco" placeholder="Preço" required step="0.01">
+    <input type="number" id="quantidade" placeholder="Quantidade" required>
+    <input type="text" id="categoria" placeholder="Categoria" required>
+    <input type="text" id="origem" placeholder="Origem do Produto" required>
+    <input type="text" id="lote" placeholder="Lote do Produto" required>
+    <input type="date" id="validade" placeholder="Validade do Produto" required>
+    <button type="submit">Salvar Produto</button>
+  </form>
+
+  <!-- Tabela -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th>Categoria</th>
+        <th>Origem</th>
+        <th>Lote</th>
+        <th>Validade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="corpoTabela">
+    </tbody>
+  </table>
+  <script src="../js/lista.js"></script>
+</body>
+</html>
